@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ciberseguridad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#que-es">¿Qué es?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#importancia">Importancia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tips">Consejos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#amenazas">Amenazas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proteccion">Protección</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#normativas">Normativas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#herramientas">Herramientas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#historico">Ataques Históricos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <section id="que-es">
+            <h2>¿Qué es la Ciberseguridad?</h2>
+            <p>La ciberseguridad es el conjunto de prácticas, tecnologías y procesos diseñados para proteger sistemas, redes y datos de ataques cibernéticos.</p>
+        </section>
+        
+        <section id="importancia" class="mt-4">
+            <h2>Importancia de la Ciberseguridad</h2>
+            <p>Proteger nuestra información es crucial en un mundo digitalizado donde las amenazas están en constante evolución.</p>
+        </section>
+        
+        <section id="amenazas" class="mt-4">
+            <h2>Principales Amenazas Cibernéticas</h2>
+            <p>Algunas de las amenazas más comunes incluyen:</p>
+            <ul>
+                <li><strong>Phishing:</strong> Correos electrónicos fraudulentos diseñados para robar información.</li>
+                <li><strong>Ransomware:</strong> Malware que cifra los archivos y exige un rescate.</li>
+                <li><strong>Ataques de denegación de servicio (DDoS):</strong> Intentos de saturar servidores y causar interrupciones.</li>
+            </ul>
+        </section>
+        
+        <section id="proteccion" class="mt-4">
+            <h2>Cómo Protegerse</h2>
+            <ul>
+                <li>Utiliza software antivirus y mantenlo actualizado.</li>
+                <li>No hagas clic en enlaces sospechosos o archivos adjuntos desconocidos.</li>
+                <li>Realiza copias de seguridad periódicas de tu información.</li>
+            </ul>
+        </section>
+        
+        <section id="normativas" class="mt-4">
+            <h2>Normativas y Legislación</h2>
+            <p>Las principales normativas en ciberseguridad incluyen el RGPD, la Ley de Protección de Datos Personales y otras regulaciones que protegen la privacidad.</p>
+        </section>
+        
+        <section id="herramientas" class="mt-4">
+            <h2>Herramientas de Ciberseguridad</h2>
+            <p>Algunas herramientas esenciales incluyen:</p>
+            <ul>
+                <li>Firewalls</li>
+                <li>Antivirus</li>
+                <li>Gestores de contraseñas</li>
+                <li>VPNs</li>
+            </ul>
+        </section>
+        
+        <section id="historico" class="mt-4">
+            <h2>Ataques Cibernéticos Históricos</h2>
+            <p>Algunos ataques significativos en la historia incluyen:</p>
+            <ul>
+                <li>WannaCry (2017)</li>
+                <li>Stuxnet (2010)</li>
+                <li>NotPetya (2017)</li>
+            </ul>
+        </section>
+
+	 <section id="tips" class="mt-4">
+            <h2>Consejos de Seguridad</h2>
+            <ul>
+                <li>Usa contraseñas seguras y únicas.</li>
+                <li>Habilita la autenticación en dos pasos.</li>
+                <li>Mantén tu software actualizado.</li>
+            </ul>
+            <button id="alerta" class="btn btn-primary mt-2">Ver consejo aleatorio</button>
+        </section>
+    </div>
+    
+    <script>
+        document.getElementById("alerta").addEventListener("click", function() {
+            const consejos = [
+                "No compartas información sensible en redes sociales.",
+                "Evita redes WiFi públicas sin protección.",
+                "Verifica los remitentes de correos antes de abrir archivos adjuntos."
+            ];
+            alert(consejos[Math.floor(Math.random() * consejos.length)]);
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
